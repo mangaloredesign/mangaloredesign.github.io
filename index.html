@@ -21,33 +21,38 @@
   <![endif]-->
 </head>
 <body>
-  <div id="bgbox" style="margin:0;padding:0;position:fixed;height:100vh;width:100%;overflow-y:none;background:rgba(207,0,15,0.8);z-index: -999;">
-<!--    <img src="css/img/hero.jpg" alt="" style="background-position: center;-webkit-background-size: cover;  background-size: cover;">-->
-  </div>
+  <div class="bg-pattern" style="height:100vh;">
+    <div style="margin:0;padding:0;height:100vh;width:100%;overflow-y:none;background:rgba(207,0,15,0.9);z-index:-9999;">
+      <div class="container">
 
-  <div class="container" style="height:100vh;">
-    <!-- navbar -->
-    <div class="row" id="navbar-row">
-      <div class="col col-md-4">
-        <a href="#" style="text-decoration:none;"><h2>Mangalore <br>Design</h2></a>
+        <!-- navbar -->
+        <div class="row" id="navbar-row">
+          <div class="col col-md-4">
+            <a href="#" style="text-decoration:none;"><h2>Mangalore <br>Design</h2></a>
+          </div>
+          <div class="col col-md-8">
+            <ul class="nav pull-right">
+              <li><a href="#main-approach">Approach</a></li>
+              <li><a href="work.html">Work</a></li>
+              <li><a href="#main-contact">Contact us</a></li>
+            </ul>
+          </div>
+        </div><!-- End of navbar -->
+        
+        <!-- Jumbo without buttons -->
+        <div class="row" id="jumbo" style="margin-top:200px;z-index:100;">
+          <h1 style="font-size:350%;line-height:150%;padding-left:20px;color:white;">Innovative. Creative. Beautiful.<br>We design professional websites.</h1>
+        </div>
+        <!-- End of Jumbo without buttons -->
+      
+        <!-- View buttons -->
+        <div class="row">
+          <button type="button" class="btn btn-default" style="margin-left:20px;background-color:inherit;color:white;border-radius:0;border-width:2px;padding-left:20px;padding-right:20px;font-size:1.1em;"><a href="work.html" style="text-decoration:none;color:inherit;">View work</a></button>
+          <button type="button" class="btn btn-default" style="margin-left:20px;background-color:white;color:#F2784B;border-radius:0;border-width:2px;padding-left:20px;padding-right:20px;border-color:white;"><a href="#main-approach" style="text-decoration:none;color:inherit;">Learn more</a></button>
+        </div>
+        <!-- End of View buttons -->
+
       </div>
-
-      <div class="col col-md-8">
-        <ul class="nav pull-right">
-          <li><a href="#main-approach">Approach</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="#main-contact">Contact us</a></li>
-        </ul>
-      </div>
-    </div><!-- End of navbar -->
-
-    <div class="row" id="jumbo" style="margin-top:200px;z-index:100;">
-      <h1 style="font-size:350%;line-height:150%;padding-left:20px;color:white;">Innovative. Creative. Beautiful.<br>We design professional websites.</h1>
-    </div>
-
-    <div class="row">
-      <button type="button" class="btn btn-default" style="margin-left:20px;background-color:inherit;color:white;border-radius:0;border-width:2px;padding-left:20px;padding-right:20px;font-size:1.1em;">View work</button>
-      <button type="button" class="btn btn-default" style="margin-left:20px;background-color:white;color:#F2784B;border-radius:0;border-width:2px;padding-left:20px;padding-right:20px;border-color:white;">Learn more</button>
     </div>
   </div>
 
@@ -56,7 +61,7 @@
     <div class="container">
       <div class="row">
         <div class="col col-md-6">
-          <img src="img/laptop.png" alt="" style="max-width:100%;height:auto;margin-top:180px;">
+          <img src="img/laptop2.png" alt="" style="max-width:100%;height:auto;margin-top:180px;">
         </div>
 
         <div class="col col-md-1"></div>
@@ -64,7 +69,7 @@
         <div class="col col-md-4">
           <h3 style="margin-top:140px;font-size:240%;">Best designs help bring more customers.</h3>
           <p style="color:gray;line-height:1.5em;font-size:100%;margin-top:15px;">We focus on our clients needs and we design accordingly, that helps in reaching their goals, while keeping their asthetic expectations.</p>
-          <button type="button" class="btn btn-default" style="margin-top:20px;background-color:inherit;color:rgba(207,0,15,0.8);border-color:rgba(207,0,15,0.8);border-radius:0;border-width:2px;padding-left:20px;padding-right:20px;font-size:1.1em;">View work<span class="glyphicon glyphicon-menu-right" aria-hidden="true" style="padding-left:10px;"></span></button>
+          <button type="button" class="btn btn-default" style="margin-top:20px;background-color:inherit;color:rgba(207,0,15,0.8);border-color:rgba(207,0,15,0.8);border-radius:0;border-width:2px;padding-left:20px;padding-right:20px;font-size:1.1em;"><a href="work.html" style="text-decoration:none;color:inherit;">View work</a><span class="glyphicon glyphicon-menu-right" aria-hidden="true" style="padding-left:10px;"></span></button>
         </div>
 
         <div class="col col-md-2"></div>
@@ -74,10 +79,11 @@
   <!-- end of case-study -->
 
   <!-- Approach -->
-  <div class="container-fluid" id="main-approach" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(img/idea.jpg);height:500px;">
+  <div class="container-fluid" id="main-approach" style="background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0)), url(img/idea.jpg);height:500px;">
     <div class="container">
       <div class="row">
-        <h4 style="font-size:250%;color:white;margin-top:100px;font-weight:300;text-transform:uppercase;">Plan <span class="glyphicon glyphicon-menu-right" aria-hidden="true" style="padding-left:20px"></span><span class="glyphicon glyphicon-menu-right" aria-hidden="true" style="padding-right:20px"></span> Design <span class="glyphicon glyphicon-menu-right" aria-hidden="true" style="padding-left:20px"></span><span class="glyphicon glyphicon-menu-right" aria-hidden="true" style="padding-right:20px"></span>Code</h4>
+        <h4 style="font-size:250%;color:white;margin-top:90px;margin-bottom:30px;font-weight:300;text-transform:uppercase;">Plan <span class="glyphicon glyphicon-menu-right" aria-hidden="true" style="padding-left:20px"></span><span class="glyphicon glyphicon-menu-right" aria-hidden="true" style="padding-right:20px"></span> Design <span class="glyphicon glyphicon-menu-right" aria-hidden="true" style="padding-left:20px"></span><span class="glyphicon glyphicon-menu-right" aria-hidden="true" style="padding-right:20px"></span>Code</h4>
+
         <div class="col col-md-6">
           <p style="color:#ECF0F1;line-height:1.5em;font-size:120%;font-weight:100;margin-top:20px;">
             <span style="display: inline-block;
@@ -149,7 +155,7 @@
               <label for="inputEmail3" class="control-label">Message </label>
               <textarea type="text" class="form-control" name="message" placeholder="Tell us more about your project" row="4"></textarea>
             </div>
-            <input type="submit" class="btn btn-default" style="font-weight:400;font-size:120%;padding-left:20px;padding-right:20px;margin-bottom:30px;background-color:inherit;border-color: #cf000f;border-radius:0;border-width:2px; " value="Send">
+            <input type="submit" class="btn btn-default" style="font-weight:400;font-size:120%;padding-left:20px;padding-right:20px;margin-bottom:30px;color:white;background-color:#cf000f;border-color: #cf000f;border-radius:0;border-width:2px; " value="Send">
           </form>
         </div>
       </div>
@@ -163,39 +169,6 @@
     </div>
   </div>
   
-  <script>
-    var contactForm = contactSection.querySelector('form'),
-    inputName = contactForm.querySelector('[name="name"]'),
-    inputEmail = contactForm.querySelector('[name="email"]'),
-    textAreaMessage = contactForm.querySelector('[name="message"]'),
-    sendButton = contactForm.querySelector('button');
-
-    sendButton.addEventListener('click', function(event){
-      event.preventDefault(); // prevent the form to do the post.
-
-      sendButton.innerHTML = 'sending..';
-
-      var xhr = new XMLHttpRequest();
-      xhr.open('POST', '//formspree.io/mangalore.design@gmail.com', true);
-      xhr.setRequestHeader("Accept", "application/json")
-      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
-
-      xhr.send(
-        "name=" + inputName.value +
-        "&email=" + inputEmail.value +
-        "&message=" + textAreaMessage.value);
-
-      xhr.onloadend = function (res) {
-        if (res.target.status === 200){
-          sendButton.innerHTML = 'Message sent!';
-        }
-        else {
-          sendButton.innerHTML = 'Error!';
-        }
-      }
-    });
-  </script>
-
 
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
